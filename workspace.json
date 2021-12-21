@@ -3,6 +3,7 @@
   "projects": {
     "core": "apps/core",
     "core-components": "libs/core/components",
-    "core-e2e": "apps/core-e2e"
+    "core-e2e": "apps/core-e2e",
+    "core-theme": "libs/core/theme"
   }
 }
