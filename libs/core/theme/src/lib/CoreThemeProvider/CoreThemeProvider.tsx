@@ -2,6 +2,7 @@ import {
   ThemeProvider as MaterialThemeProvider,
   CssBaseline,
 } from '@mui/material';
+import GlobalStyles from '../GlobalStyles/GlobalStyles';
 
 /* eslint-disable-next-line */
 export interface CoreThemeProviderProps {
@@ -11,6 +12,7 @@ export interface CoreThemeProviderProps {
 export function CoreThemeProvider({ children }: CoreThemeProviderProps) {
   return (
     <MaterialThemeProvider theme={{}}>
+      <GlobalStyles />
       <CssBaseline />
       {children}
     </MaterialThemeProvider>
