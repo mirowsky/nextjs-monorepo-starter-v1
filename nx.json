@@ -32,7 +32,29 @@
   "generators": {
     "@nrwl/react": {
       "application": {
+        "style": "none",
+        "linter": "eslint",
         "babel": true
+      },
+      "component": {
+        "style": "none",
+        "export": true,
+        "pascalCaseDirectory": true,
+        "pascalCaseFiles": true
+      },
+      "storybook-configuration": {
+        "configureCypress": false,
+        "generateCypressSpecs": false,
+        "generateStories": false,
+        "linter": "eslint"
+      },
+      "library": {
+        "style": "none",
+        "linter": "eslint",
+        "publishable": true,
+        "buildable": true,
+        "component": false,
+        "compiler": "swc"
       }
     },
     "@nrwl/next": {
